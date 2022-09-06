@@ -1,1 +1,0 @@
-# EVthinker.github.io

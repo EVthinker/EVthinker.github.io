@@ -16,13 +16,17 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body id="pagetop">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">DpEV</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
+                <div id="x">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#pagetop">DpEV</a></a></li>
+                </ul>
+                </div>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-secondary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Danh Mục
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -35,27 +39,41 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-primary text-white text-center" id="mheader">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading mb-0">DpEV</h1>
+                <p class="mydiv" contenteditable>
+                    <span class="masthead-heading mb-0 fw-bolder" style="color: #283655">D</span>
+                    <span class="masthead-heading mb-0 fw-bolder" style="color: #ffffff">p</span>
+                    <span class="masthead-heading mb-0 fw-bolder" style="color: #40ffdf">E</span>
+                    <span class="masthead-heading mb-0 fw-bolder" style="color: #FFBFBF">V</span>
+                </p>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom col-mpink">
                     <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div>
+                    <a class="btn bg-secondary btn-dpev mx-1" href="https://play.google.com/store/apps/developer?id=huunguyenhtn"><i class="fab fa-fw fa-wordpress "></i></a>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                    <a class="btn bg-secondary btn-dpev mx-1" href="https://play.google.com/store/apps/developer?id=huunguyenhtn"><i class="fab fa-fw fa-google-play "></i></a>
+                    <div class="divider-custom-line"></div>
+                    <a class="btn bg-secondary btn-dpev mx-1" href="https://play.google.com/store/apps/developer?id=huunguyenhtn"><i class="fa-solid fa-eye"></i></a>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Mobile Developer - Content Creator - Illustrator</p>
+                <p class="masthead-subheading fw-bolder mb-0 text-secondary">Mobile Developer</p>
+                <p class="masthead-subheading fw-bolder mb-0 text-secondary">Content Creator</p>
+                <p class="masthead-subheading fw-bolder mb-0 text-secondary">Illustrator</p>
+                
             </div>
         </header>
         <!-- Product Section-->
         <section class="page-section product" id="product">
             <div class="container">
                 <!-- Product Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Product</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sản Phẩm</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -91,51 +109,24 @@
                             <img class="img-fluid" src="assets/img/product/circus.png" alt="..." />
                         </div>
                     </div>
-                    <!-- Product Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="product-item mx-auto" data-bs-toggle="modal" data-bs-target="#productModal4">
-                            <div class="product-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="product-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/product/game.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Product Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="product-item mx-auto" data-bs-toggle="modal" data-bs-target="#productModal5">
-                            <div class="product-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="product-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/product/safe.png" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Product Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="product-item mx-auto" data-bs-toggle="modal" data-bs-target="#productModal6">
-                            <div class="product-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="product-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/product/submarine.png" alt="..." />
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
         <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
+        <section class="page-section bg-primary text-secondary mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary">Thông Tin</h2>
                 <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="container">Hông có gì ở đây hết.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="container">Thiệt đó!</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
@@ -211,7 +202,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Gửi</button>
                         </form>
                     </div>
                 </div>
@@ -231,19 +222,18 @@
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Mạng Xã Hội</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https:www.facebook.com/dnpnev"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#twitter"><i class="fab fa-fw fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#linkedin"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">Freelancer</h4>
-                        <p class="lead mb-0">
-                            Trang web này thiết kế dựa trên chủ đề "
-                            <a href="https://startbootstrap.com/theme/freelancer">Freelancer</a>
-                            " được cung cấp miễn phí (có giấy phép MIT) bởi
-                            <a href="https://startbootstrap.com">Start Bootstrap</a>
+                        <p class="container">
+                            Trang web này thiết kế dựa trên chủ đề 
+                            <a class="a1" href="https://startbootstrap.com/theme/freelancer">Freelancer</a>
+                             được cung cấp miễn phí bởi
+                            <a class="a1" href="https://startbootstrap.com">Start Bootstrap</a>
                             .
                         </p>
                     </div>
@@ -252,7 +242,7 @@
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Bản quyền &copy; DpEV</small></div>
+            <div class="container"><small>Copyright 2022 &copy; dpev.tk</small></div>
         </div>
         <!-- Product Modals-->
         <!-- Product Modal 1-->

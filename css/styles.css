@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
+  --bs-primary-rgb: 64, 255, 223;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -53,6 +53,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
+  --bs-beautiful: 255, 191, 191;
   --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3031,13 +3032,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #40ffdf;
+  border-color: #40ffdf;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #16a085;
-  border-color: #15967d;
+  background-color: #20dfbf;
+  border-color: #40ffdf;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3055,8 +3056,8 @@ textarea.form-control-lg {
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  background-color: #40ffdf;
+  border-color: #40ffdf;
 }
 
 .btn-secondary {
@@ -4049,13 +4050,38 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
 }
-.navbar-brand {
+.uuu {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #1abc9c;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.navbar-brand {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #1abc9c;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .navbar-brand {
+    transition: none;
+  }
+}
+.navbar-brand:hover, .navbar-brand:focus {
+  color: #15967d;
+}
+.navbar-brand.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
 }
 .navbar-nav {
   display: flex;
@@ -11396,12 +11422,12 @@ html {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #1abc9c;
+    color: var(--bs-secondary);
+    background: #40ffdf;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #1abc9c;
+    color: var(--bs-secondary);
+    background: #20dfbf;
   }
 
   #mainNav.navbar-shrink {
@@ -11506,4 +11532,80 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.a1:link {
+  color: #40ffdf;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.a1:visited {
+  color: #40ffdf;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.a1:hover {
+  color: #20dfbf;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.a1:active {
+  color: #FFBFBF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.col-mpink {
+  color: #FFBFBF;
+  background-color: transparent
+}
+.btn-dpev:link {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-radius: 100%;
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+.btn-dpev:visited {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.btn-dpev:hover {
+  color: #FFBFBF;
+  border-color: #FFBFBF;
+}
+.btn-dpev:active {
+  color: #FF8080;
+  border-color: #FF8080;
+}
+.mydiv {
+  min-width: fit-content;
+  min-height :fit-content;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 25px;
+  font-weight: bold;
+  animation: myanimation 7s infinite;
+}
+@keyframes myanimation {
+  0% {background-color: #283655;}
+  25% {background-color:#ffffff;}
+  50% {background-color:#40ffdf;}
+  75% {background-color:#FFBFBF;}
+  100% {background-color: #283655;}
+}
+#about {
+  border-radius: 50px;
+} 
+#mheader {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }

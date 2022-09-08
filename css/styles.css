@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 64, 255, 223;
+  --bs-primary-rgb: 191, 255, 255;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -11423,11 +11423,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: var(--bs-secondary);
-    background: #40ffdf;
+    background: #bfffff;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: var(--bs-secondary);
-    background: #20dfbf;
+    background: #80ffff;
   }
 
   #mainNav.navbar-shrink {
@@ -11533,7 +11533,32 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+.a2:disabled {
+  color: #000;
+}
+.a2:link {
+  color: #bfffff;
+  background-color: transparent;
+  text-decoration: none;
+}
 
+.a2:visited {
+  color: #bfffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.a2:hover {
+  color: #80ffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.a2:active {
+  color: #ffbfbf;
+  background-color: transparent;
+  text-decoration: none;
+}
 .a1:link {
   color: #40ffdf;
   background-color: transparent;
@@ -11584,7 +11609,7 @@ html {
   color: #FF8080;
   border-color: #FF8080;
 }
-.mydiv {
+.mydpevbg {
   min-width: fit-content;
   min-height :fit-content;
   padding-left: 5%;
@@ -11596,11 +11621,11 @@ html {
   animation: myanimation 7s infinite;
 }
 @keyframes myanimation {
-  0% {background-color: #283655;}
+  0% {background-color: #203040;}
   25% {background-color:#ffffff;}
   50% {background-color:#40ffdf;}
   75% {background-color:#FFBFBF;}
-  100% {background-color: #283655;}
+  100% {background-color: #203040;}
 }
 #about {
   border-radius: 50px;
